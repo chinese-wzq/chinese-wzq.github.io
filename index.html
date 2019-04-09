@@ -238,6 +238,166 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://yi-ge-shuai-qi-de-kai-fa-zhe.github.io/2019/04/08/安装hexo（改为next主题 挂上谷歌广告 增加评论系统）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="能用外号么QAQ:中午饭">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mr_Wu的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/04/08/安装hexo（改为next主题 挂上谷歌广告 增加评论系统）/" itemprop="url">安装hexo（改为next主题 挂上谷歌广告 增加评论系统）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-08T18:59:02+08:00">
+                2019-04-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/04/08/安装hexo（改为next主题 挂上谷歌广告 增加评论系统）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/08/安装hexo（改为next主题 挂上谷歌广告 增加评论系统）/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/04/08/安装hexo（改为next主题 挂上谷歌广告 增加评论系统）/" class="leancloud_visitors" data-flag-title="安装hexo（改为next主题 挂上谷歌广告 增加评论系统）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h4><h5 id="本文章参考："><a href="#本文章参考：" class="headerlink" title="本文章参考："></a>本文章参考：</h5><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">HEXO官方文档</a></p>
+<p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">NexT官方文档</a></p>
+<p><a href="https://www.jianshu.com/p/774dfc1c2fb1" target="_blank" rel="noopener">给 Hexo 博客加上 adsense 广告</a></p>
+<p><a href="https://www.jianshu.com/p/f4658df66a15" target="_blank" rel="noopener">Hexo博客使用valine评论系统无效果及终极解决方案</a></p>
+<h5 id="本文章使用ubuntu系统，不是的可以…关闭（滚！）了！"><a href="#本文章使用ubuntu系统，不是的可以…关闭（滚！）了！" class="headerlink" title="本文章使用ubuntu系统，不是的可以…关闭（滚！）了！"></a>本文章使用ubuntu系统，不是的可以…关闭（<del>滚！</del>）了！</h5><h1 id="那么，我们开始吧！"><a href="#那么，我们开始吧！" class="headerlink" title="那么，我们开始吧！"></a>那么，我们开始吧！</h1><p>我们是要建立以Hexo为框架的博客，对吧？那么…….<strong>无论如何也得安装Hexo吧</strong>！</p>
+<p>所以，先……</p>
+<h3 id="安装Hexo-Node-js-git"><a href="#安装Hexo-Node-js-git" class="headerlink" title="安装Hexo Node.js git"></a>安装Hexo Node.js git</h3><p>我们根据官方文档的介绍</p>
+<p>我们知道</p>
+<p>要先安装Node.js和git，我今天教大家一波骚操作，首先，打开终端，然后，输入下列代码安装Node.js和git，顺便在最后安装Hexo，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install nodejs</span><br><span class="line">sudo apt install npm</span><br><span class="line">sudo apt install git</span><br><span class="line">sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h3 id="建立博客存放文件夹并修改配置"><a href="#建立博客存放文件夹并修改配置" class="headerlink" title="建立博客存放文件夹并修改配置"></a>建立博客存放文件夹并修改配置</h3><p>因为本人<del>懒得再写</del>不想使文章篇幅过长所以，请您进入一下两个网址</p>
+<p><a href="https://hexo.io/zh-cn/docs/setup" target="_blank" rel="noopener">Hexo官方文档——建站</a></p>
+<p><a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">Hexo官方文档——配置</a></p>
+<p>自行配置！</p>
+<h3 id="改为NexT主题"><a href="#改为NexT主题" class="headerlink" title="改为NexT主题"></a>改为NexT主题</h3><p>还是因为懒，所以请自己看：</p>
+<p><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">NexT官方文档</a></p>
+<h3 id="添加评论系统"><a href="#添加评论系统" class="headerlink" title="添加评论系统"></a>添加评论系统</h3><p>又是因为懒，所以请自己看：</p>
+<p><a href="https://www.jianshu.com/p/f4658df66a15" target="_blank" rel="noopener">Hexo添加valine评论系统</a></p>
+<h3 id="插入广告，赚点小收入"><a href="#插入广告，赚点小收入" class="headerlink" title="插入广告，赚点小收入"></a>插入广告，赚点小收入</h3><p>已经没有任何人像我这么懒了，所以请自己看（哇这也能算原因）：</p>
+<p><a href="https://www.jianshu.com/p/774dfc1c2fb1" target="_blank" rel="noopener">Hexo加上谷歌广告</a></p>
+<h1 id="全文-终"><a href="#全文-终" class="headerlink" title="全文@终"></a>全文@终</h1>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://yi-ge-shuai-qi-de-kai-fa-zhe.github.io/2018/11/10/超级大的巨坑：Scratch作品：国外大神的跑酷教程汉化/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -414,7 +574,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
